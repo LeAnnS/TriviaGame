@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
   <meta charset="utf-8">
-  <title>Start|Golden Girls Trivia Game</title>
+  <title>Game Over|Golden Girls Trivia Game</title>
 
   <!--  Linking Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -28,22 +28,37 @@
       </div>
     </div>
 
-<!-- This is Screen 1 -->
-	<div id="Introduction">
+<!-- This is Screen 3-->
+	<div id="Counters">
 
-	<!-- This row holds the instructions -->
+	<!-- This row holds a Completion Message -->
 		<div class="col-lg-12">
 			<div class="card-heading">
-				<h3 class="card-title text-center">Click on the Golden Girls to Start the Game.</h3>
+				<h3 class="card-title text-center">Game Over!</h3>
+					<br>
+			<!-- This row holds the Number of Correct Answers -->
+				<h3 class="card-title text-center">Correct Answers:  <id="correctCounter">0</id="correctCounter"></h3>
+					<br>
+			<!-- This row holds the Number of Incorrect Answers -->		
+				<h3 class="card-title text-center">Incorrect Answers:  <id="correctCounter">1</id="incorrectCounter"></h3>
+					<br>
+			<!-- This row holds the Number of Unanswered Quesitons -->		
+				<h3 class="card-title text-center">Unanswered Questions:  <id="unansweredCounter">2</id="unansweredCounter"></h3>
+				<br>
+
 			</div>
 
-		<!-- This row holds the Start button -->
+	
+
+
+		<!-- This row holds a Thank You Play Again message. -->
 			<div class="card-body text-center">
-				<a href="questions.html"><img class="golden-girls-image auto" src="assets/images/golden_girls_start.jpg" alt="Start Game">
+				<h5 class="card-title text-center">Choose 'Stay Golden' and Play Again!</h5>
+				<a href="index.html"><img class="golden-girls-image auto" src="assets/images/golden_girls_gameover.jpg" alt="Game Over">
 			</div>
 		</div>
 
-
+		
 </div>
 
 

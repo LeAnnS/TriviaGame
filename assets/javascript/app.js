@@ -1,7 +1,7 @@
 //Global Variables (accessible by all functions)
 // =============================================================
 
-var questions =["How long were Dorothy and Stan married?", "What was the name of Sophia's retirement home?", "What did everyone call Blanche's father?", "What were the names of Rose's husband and long-time boyfriend?", "How did Sophia start all of her stories?", "Rose's childhood bear was accidentally given to a Sunshine cadet.  What was it's name?"]
+var questions =["How many years were Dorothy and Stan married?", "What was the name of Sophia's retirement home?", "What did everyone call Blanche's father?", "What were the names of Rose's husband and long-time boyfriend?", "How did Sophia start all of her stories?", "Rose's childhood bear was accidentally given to a Sunshine cadet.  What was it's name?"]
 
 
 
@@ -11,6 +11,10 @@ var questions =["How long were Dorothy and Stan married?", "What was the name of
 // ===========================================================
 
 //Define the startGame Function
+	//Displays Questions & Answer Options
+	//Starts countdown timer
+
+	//
 
 
 
@@ -31,12 +35,42 @@ var question1 = new Question(questions[0], 38, 23, 10, 30)
 	console.log (question1.wrong3)
 
 
-  //MAIN PROCESS (code that controls what is run)
-  // ==============================================================
+//checkAnswers function is code that needs to run to verify if the answers are correct
+var checkAnswers = function() {
 
-  // Start the game by running the startGame() function
+	//check if chosenAnswer is equal to correctAnswer
+	if(chosenAnswer == correct) {
+
+		//add to correctCounter
+		correctCounter++;
+
+		//update html with correct count
+		$("#correctCounter").html(correctCounter);
+	}
+
+	//check if chosenAnswer is equal to incorrectAnswer
+	if(chosenAnswer == wrong) {
+
+		//add to incorrectCounter
+		incorrectCounter++;
+
+		//update html with correct count
+		$("#incorrectCounter").html(incorrectCounter);
+	}
+
+}
+
+
+//
+
+
+//MAIN PROCESS (code that controls what is run)
+// ==============================================================
+
+// Start the game by running the startGame() function
   //startGame();
 
+//Start timer
 
 
 
