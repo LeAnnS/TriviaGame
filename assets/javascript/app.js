@@ -1,6 +1,10 @@
 //Global Variables (accessible by all functions)
 // =============================================================
 
+
+
+
+//TRIVIA QUESTION VARIABLES
 var questions =["How many years were Dorothy and Stan married?", "What was the name of Sophia's retirement home?", "What did everyone call Blanche's father?", "What were the names of Rose's husband and long-time boyfriend?", "How did Sophia start all of her stories?", "Rose's childhood bear was accidentally given to a Sunshine cadet.  What was it's name?"]
 
 
@@ -14,7 +18,47 @@ var questions =["How many years were Dorothy and Stan married?", "What was the n
 	//Displays Questions & Answer Options
 	//Starts countdown timer
 
-	//
+//start timer when questions page loads
+window.onload = function() {
+	$("#startTimer").on("click", timer.start);
+};
+
+//TIMER VARIABLES
+//variable to hold setInterval to run the timer
+var intervalID;
+
+//prevents the clock from being spec up unnecessarily (??)
+var clockRunning = false;	
+
+//Countdown timer object
+var timer = {
+
+	time: 0,
+
+	reset: function() {
+		timer.time = 0;
+
+		// Change the "display" to "00:00"
+		$("#display").text ("00:00");
+	},
+
+	start: function() {
+		//Use setInterval to start the count here and set the clock to running.
+		if (!clockRunning) {
+			intervalID = setInterval(timer.count, 1000);
+			clockRunning = true;
+		}
+	},
+
+	count: function() {
+		//increment time by 1
+		timer.time++;
+
+		//show the lapsed time in the display
+		$("display").text(time);
+	},
+
+};
 
 
 
