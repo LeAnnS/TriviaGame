@@ -103,19 +103,18 @@ var counters = {
 				$("#wrapper").append("<input type='radio' name='question-"+i+" 'value='" +questions[i].answers[j]+"'>" +questions[i].answers[j])
 			}
 		}
-	},
-	//define the done function
-	done: function(){
-		$.each($("input[name="question-0]":checked"),function(){
-			if($(this).val()==questions[0].correctAnswer){
-				counters.correctCounter++;
-			}  else {
-				counters.incorrectCounter++;
-			}
-		});
+	// },
+	// //define the done function
+	// done: function(){
+	// 	$.each($("input[name="question-0]":checked"),function(){
+	// 		if($(this).val()==questions[0].correctAnswer){
+	// 			counters.correctCounter++;
+	// 		}  else {
+	// 			counters.incorrectCounter++;
+	// 		}
+	// 	});
 
-
-	})
+	}
 }
 
 
