@@ -15,13 +15,16 @@ var questions =["How many years were Dorothy and Stan married?", "What was the n
 // ===========================================================
 
 //Define the startGame Function
+$("#start").on("click", function() {
+	console.log("game will start")
+})
 	//Displays Questions & Answer Options
 	//Starts countdown timer
 
 //start timer when questions page loads
-window.onload = function() {
-	$("#startTimer").on("click", timer.start);
-};
+// window.onload = function() {
+	// $("#startTimer").on("click", timer.start);
+// };
 
 //TIMER VARIABLES
 //variable to hold setInterval to run the timer
