@@ -62,7 +62,7 @@ var timer = {
 
 
 
-//constructor for new question
+//This is the blue print for new question, or constructor.
 function Question(newQuestion, correct, wrong1, wrong2, wrong3){
 	this.correct = correct
 	this.wrong1 = wrong1
@@ -70,7 +70,7 @@ function Question(newQuestion, correct, wrong1, wrong2, wrong3){
 	this.wrong3 = wrong3
 	this.triviaQuestion = newQuestion
 }
-
+//this defines th new object, which is a new instance of a triviaQuestion
 var question1 = new Question(questions[0], 38, 23, 10, 30)
 	console.log (question1.triviaQuestion)
 	console.log (question1.correct)

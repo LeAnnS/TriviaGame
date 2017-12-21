@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
   <meta charset="utf-8">
-  <title>Start|Golden Girls Trivia Game</title>
+  <title>Golden Girls Trivia Game</title>
 
   <!--  Linking Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
@@ -39,9 +39,88 @@
 
 		<!-- This row holds the Start button -->
 			<div class="card-body text-center id="startTimer">
-				<a href="questions.html"><img class="golden-girls-image auto" src="assets/images/golden_girls_start.jpg" alt="Start Game">
+				<img class="golden-girls-image auto" src="assets/images/golden_girls_start.jpg" alt="Start Game">
 			</div>
 		</div>
+	</div>
+
+
+
+<!-- This is Screen 2 -->
+	<div id="Questions">
+
+	<!-- This row holds the instructions -->
+		<div class="col-lg-12">
+			<div class="card-heading">
+				<h6 class="card-title text-center">Choose the correct answers before the timer runs out.  Click the GOLDEN GIRLS below when you are finished!</h6>
+			</div>
+
+	<!-- This row holds the Countdown Timer -->
+			<div class="card-body">
+				<h3 class="card-title text-center">Time Remaining:  <id="display">00:00</h3>
+				<br>
+			</div>
+
+
+
+	<!-- This row holds Question 1 -->
+
+
+	<!-- This row holds Question 2  -->
+
+
+	<!-- This row holds Question 3 -->
+
+
+	<!-- This row holds Question 4 -->
+
+
+	<!--  This row holds Question 5 -->
+
+
+
+	<!-- This row holds the Done Button -->
+			<div class="card-body text-center">
+				<img class="golden-girls-image auto" src="assets/images/download.gif" alt="Play Game">
+			</div>
+		</div>
+	</div>
+
+
+
+
+<!-- This is Screen 3-->
+<div id="Counters">
+
+<!-- This row holds a Completion Message -->
+	<div class="col-lg-12">
+		<div class="card-heading">
+			<h3 class="card-title text-center">Game Over!</h3>
+				<br>
+		<!-- This row holds the Number of Correct Answers -->
+			<h3 class="card-title text-center">Correct Answers:  <id="correctCounter">0</h3>
+				<br>
+		<!-- This row holds the Number of Incorrect Answers -->		
+			<h3 class="card-title text-center">Incorrect Answers:  <id="incorrectCounter">1</h3>
+				<br>
+		<!-- This row holds the Number of Unanswered Quesitons -->		
+			<h3 class="card-title text-center">Unanswered Questions:  <id="unansweredCounter">2</h3>
+			<br>
+
+		</div>
+
+
+
+
+	<!-- This row holds a Thank You Play Again message. -->
+		<div class="card-body text-center">
+			<h5 class="card-title text-center">Choose 'Stay Golden' and Play Again!</h5>
+			<img class="golden-girls-image auto" src="assets/images/golden_girls_gameover.jpg" alt="Game Over">
+		</div>
+	</div>
+</div>
+
+
 
 
 </div>
